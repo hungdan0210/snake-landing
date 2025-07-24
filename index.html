@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Snake Landing Page 🐍</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>🐍 Snake Landing Page</h1>
-    <p>Tận tâm, tận tụy, tận tình và siêu trình.</p>
+    <h1 class="highlight">🐍 Snake Landing Page</h1>
+    <p class="tagline">Tận tâm, tận tụy, tận tình và siêu trình.</p>
   </header>
 
-  <section class="info">
+  <section class="info card">
+    <h2>Liên hệ</h2>
     <ul>
       <li><strong>Email:</strong> <a href="mailto:snakenidalee@gmail.com">snakenidalee@gmail.com</a></li>
       <li><strong>Zalo:</strong> 0339991989</li>
@@ -21,35 +23,35 @@
     </ul>
   </section>
 
-  <section class="services">
+  <section class="services card">
     <h2>Dịch vụ</h2>
     <ul>
-      <li>✔️ Thiết kế landing page</li>
-      <li>✔️ Sửa lỗi HTML/CSS/JS</li>
-      <li>✔️ Tùy chỉnh WordPress</li>
-      <li>✔️ Kết nối Google Sheet & Tự động hóa</li>
+      <li>✨ Thiết kế landing page sáng tạo, chuẩn SEO</li>
+      <li>🛠️ Sửa lỗi HTML/CSS/JS hiệu quả</li>
+      <li>📦 Tùy chỉnh WordPress theo yêu cầu</li>
+      <li>🔗 Kết nối Google Sheet & Tự động hóa công việc</li>
     </ul>
   </section>
 
-  <section class="contact">
+  <section class="contact card">
     <h2>Liên hệ tư vấn</h2>
     <form id="contact-form">
-      <input type="text" name="name" placeholder="Tên của bạn" required>
-      <input type="email" name="email" placeholder="Email liên hệ" required>
+      <input type="text" name="name" placeholder="👤 Tên của bạn" required>
+      <input type="email" name="email" placeholder="📧 Email liên hệ" required>
       <select name="service">
         <option value="Landing page">Landing page</option>
         <option value="Sửa code">Sửa code</option>
         <option value="WordPress">WordPress</option>
         <option value="Khác">Khác</option>
       </select>
-      <textarea name="message" placeholder="Nội dung cần tư vấn" required></textarea>
-      <button type="submit">Gửi</button>
+      <textarea name="message" placeholder="✍️ Nội dung cần tư vấn" required></textarea>
+      <button type="submit">📨 Gửi yêu cầu</button>
     </form>
     <p id="response"></p>
   </section>
 
   <footer>
-    <p>© 2025 Snake Landing. Powered by danmai.com</p>
+    <p>© 2025 Snake Landing. Powered by <a href="https://danmai.com" target="_blank">danmai.com</a></p>
   </footer>
 
   <script src="script.js"></script>
