@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snake Web Service 🐍</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <div class="avatar">🐍</div>
+      <h1>Lê Hùng Dân</h1>
+      <p class="tagline">Tận tâm, tận tụy, tận tình và siêu trình.</p>
+      <div class="contact">
+        <p><strong>Email:</strong> <a href="mailto:snakenidalee@gmail.com">snakenidalee@gmail.com</a></p>
+        <p><strong>Zalo / Điện thoại:</strong> 0339991989</p>
+        <p><strong>Facebook:</strong> <a href="https://facebook.com/hungdan0210" target="_blank">hungdan0210</a></p>
+        <p><strong>Telegram:</strong> 0339991989</p>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>Đăng ký yêu cầu dịch vụ</h2>
+      <form id="requestForm">
+        <label for="name">Tên của bạn:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="service">Chọn dịch vụ:</label>
+        <select id="service" name="service">
+          <option value="web">Thiết kế website</option>
+          <option value="fix">Sửa lỗi website</option>
+          <option value="wordpress">WordPress / WooCommerce</option>
+          <option value="plugin">Làm plugin đơn giản</option>
+          <option value="khac">Khác...</option>
+        </select>
+
+        <label for="details">Mô tả yêu cầu:</label>
+        <textarea id="details" name="details" rows="5" required></textarea>
+
+        <button type="submit">Gửi yêu cầu</button>
+      </form>
+      <p id="thanksMsg" style="display:none;">✅ Yêu cầu đã được gửi! Anh Dân sẽ liên hệ sớm nhất qua Zalo / Email.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
