@@ -1,57 +1,57 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Snake 🐍 | Dịch vụ Web & Code</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Landing Page 🐍</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="logo">🐍</div>
-      <h1>Snake | Dịch vụ Web & Code</h1>
-      <p class="tagline">Tận tâm – Tận tụy – Tận tình – Siêu trình</p>
-    </header>
+  <header>
+    <h1>🐍 Snake Landing Page</h1>
+    <p>Tận tâm, tận tụy, tận tình và siêu trình.</p>
+  </header>
 
-    <section class="info">
-      <h2>Liên hệ</h2>
-      <ul>
-        <li><strong>Email:</strong> snakenidalee@gmail.com</li>
-        <li><strong>Zalo / Telegram:</strong> 0339991989</li>
-        <li><strong>Facebook:</strong> <a href="https://facebook.com/hungdan0210" target="_blank">facebook.com/hungdan0210</a></li>
-      </ul>
-    </section>
+  <section class="info">
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:snakenidalee@gmail.com">snakenidalee@gmail.com</a></li>
+      <li><strong>Zalo:</strong> 0339991989</li>
+      <li><strong>Facebook:</strong> <a href="https://facebook.com/hungdan0210" target="_blank">facebook.com/hungdan0210</a></li>
+      <li><strong>Telegram:</strong> 0339991989</li>
+    </ul>
+  </section>
 
-    <section class="services">
-      <h2>Dịch vụ nhận làm</h2>
-      <ul>
-        <li>Thiết kế website giới thiệu / cá nhân / công ty</li>
-        <li>Fix lỗi HTML/CSS/JS</li>
-        <li>Tối ưu tốc độ và responsive</li>
-        <li>Tư vấn & sửa code WordPress / WooCommerce</li>
-        <li>Triển khai web tĩnh lên GitHub Pages</li>
-        <li>Tạo landing page bán hàng đơn giản</li>
-      </ul>
-    </section>
+  <section class="services">
+    <h2>Dịch vụ</h2>
+    <ul>
+      <li>✔️ Thiết kế landing page</li>
+      <li>✔️ Sửa lỗi HTML/CSS/JS</li>
+      <li>✔️ Tùy chỉnh WordPress</li>
+      <li>✔️ Kết nối Google Sheet & Tự động hóa</li>
+    </ul>
+  </section>
 
-    <section class="form">
-      <h2>Gửi yêu cầu của bạn</h2>
-      <form id="contactForm">
-        <label>Chọn dịch vụ cần hỗ trợ:</label>
-        <div class="checkboxes">
-          <label><input type="checkbox" name="service" value="Thiết kế website" /> Thiết kế website</label>
-          <label><input type="checkbox" name="service" value="Fix lỗi code" /> Fix lỗi code</label>
-          <label><input type="checkbox" name="service" value="Landing page" /> Landing page</label>
-          <label><input type="checkbox" name="service" value="Khác" /> Khác</label>
-        </div>
-        <label for="details">Mô tả chi tiết yêu cầu:</label>
-        <textarea id="details" rows="5" required></textarea>
-        <button type="submit">Gửi yêu cầu</button>
-      </form>
-    </section>
-  </div>
+  <section class="contact">
+    <h2>Liên hệ tư vấn</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Tên của bạn" required>
+      <input type="email" name="email" placeholder="Email liên hệ" required>
+      <select name="service">
+        <option value="Landing page">Landing page</option>
+        <option value="Sửa code">Sửa code</option>
+        <option value="WordPress">WordPress</option>
+        <option value="Khác">Khác</option>
+      </select>
+      <textarea name="message" placeholder="Nội dung cần tư vấn" required></textarea>
+      <button type="submit">Gửi</button>
+    </form>
+    <p id="response"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Snake Landing. Powered by danmai.com</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
