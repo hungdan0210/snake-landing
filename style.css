@@ -1,101 +1,86 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f8f9fa, #e3f2fd);
+  color: #333;
   margin: 0;
   padding: 0;
-  background: #f8f9fa;
-  color: #333;
 }
 
 header {
-  background: #111;
-  color: #fff;
-  padding: 20px 0;
+  background-color: #212529;
+  color: #f1f1f1;
+  padding: 20px;
   text-align: center;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 36px;
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
 }
 
-header p {
-  margin: 5px 0 0;
-  font-size: 16px;
-  color: #ccc;
-}
-
-.container {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-.contact-info {
-  background: #fff;
+.info, .services, .contact {
+  max-width: 700px;
+  margin: 30px auto;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  margin-bottom: 40px;
+  background: #ffffffcc;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.contact-info p {
-  font-size: 16px;
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
   margin: 10px 0;
+  font-size: 1.05em;
 }
 
-.contact-info a {
-  color: #007bff;
+a {
+  color: #0077cc;
   text-decoration: none;
 }
 
-.contact-info a:hover {
+a:hover {
   text-decoration: underline;
 }
 
 form {
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-form label {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-form input,
-form select,
-form textarea {
-  width: 100%;
+input, select, textarea {
   padding: 10px;
-  margin-top: 5px;
-  border-radius: 6px;
   border: 1px solid #ccc;
-  font-size: 15px;
-  resize: vertical;
+  border-radius: 6px;
+  font-size: 1em;
 }
 
-form button {
-  margin-top: 15px;
-  background: #111;
-  color: #fff;
+button {
+  background-color: #28a745;
+  color: white;
   border: none;
-  padding: 12px 20px;
-  font-size: 16px;
+  padding: 12px;
+  font-size: 1em;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 
-form button:hover {
-  background: #333;
+button:hover {
+  background-color: #218838;
 }
 
 footer {
   text-align: center;
-  padding: 20px 0;
-  color: #777;
-  font-size: 14px;
+  padding: 20px;
+  background: #343a40;
+  color: white;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #ffc107;
 }
