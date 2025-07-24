@@ -1,58 +1,56 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Snake Landing Page 🐍</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page – Lê Hùng Dân</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
-    <h1 class="highlight">🐍 Snake Landing Page</h1>
-    <p class="tagline">Tận tâm, tận tụy, tận tình và siêu trình.</p>
+    <h1>🐍 Lê Hùng Dân – Tôi nhận làm những gì tôi giỏi</h1>
   </header>
 
-  <section class="info card">
-    <h2>Liên hệ</h2>
-    <ul>
-      <li><strong>Email:</strong> <a href="mailto:snakenidalee@gmail.com">snakenidalee@gmail.com</a></li>
-      <li><strong>Zalo:</strong> 0339991989</li>
-      <li><strong>Facebook:</strong> <a href="https://facebook.com/hungdan0210" target="_blank">facebook.com/hungdan0210</a></li>
-      <li><strong>Telegram:</strong> 0339991989</li>
-    </ul>
-  </section>
+  <div class="container">
+    <!-- Cột trái -->
+    <div class="column">
+      <h2>Đặt yêu cầu</h2>
+      <form id="jobForm">
+        <label for="name">Tên của bạn:</label><br/>
+        <input type="text" id="name" name="name" required><br/><br/>
 
-  <section class="services card">
-    <h2>Dịch vụ</h2>
-    <ul>
-      <li>✨ Thiết kế landing page sáng tạo, chuẩn SEO</li>
-      <li>🛠️ Sửa lỗi HTML/CSS/JS hiệu quả</li>
-      <li>📦 Tùy chỉnh WordPress theo yêu cầu</li>
-      <li>🔗 Kết nối Google Sheet & Tự động hóa công việc</li>
-    </ul>
-  </section>
+        <label for="request">Mô tả công việc:</label><br/>
+        <textarea id="request" name="request" rows="5" required></textarea><br/><br/>
 
-  <section class="contact card">
-    <h2>Liên hệ tư vấn</h2>
-    <form id="contact-form">
-      <input type="text" name="name" placeholder="👤 Tên của bạn" required>
-      <input type="email" name="email" placeholder="📧 Email liên hệ" required>
-      <select name="service">
-        <option value="Landing page">Landing page</option>
-        <option value="Sửa code">Sửa code</option>
-        <option value="WordPress">WordPress</option>
-        <option value="Khác">Khác</option>
-      </select>
-      <textarea name="message" placeholder="✍️ Nội dung cần tư vấn" required></textarea>
-      <button type="submit">📨 Gửi yêu cầu</button>
-    </form>
-    <p id="response"></p>
-  </section>
+        <button type="submit">Gửi yêu cầu</button>
+      </form>
+      <div id="formStatus" class="result"></div>
+    </div>
 
-  <footer>
-    <p>© 2025 Snake Landing. Powered by <a href="https://danmai.com" target="_blank">danmai.com</a></p>
-  </footer>
+    <!-- Cột giữa -->
+    <div class="column">
+      <h2>Thông tin cá nhân</h2>
+      <p><b>Tên:</b> Lê Hùng Dân</p>
+      <p><b>Email:</b> snakenidalee@gmail.com</p>
+      <p><b>Vai trò:</b> Người xây dựng và dẫn dắt SnakeMaiCo</p>
+      <p><b>Thông điệp:</b><br/>
+        Tôi không có bằng cấp, không học vị. Tôi chỉ có kỹ năng, sự kiên trì và kết quả thực tế.<br/>
+        Nếu bạn cần một người làm được việc, tôi sẵn sàng.
+      </p>
+    </div>
+
+    <!-- Cột phải -->
+    <div class="column">
+      <h2>Dịch vụ cung cấp</h2>
+      <ul>
+        <li>Phát triển website WordPress / Shopify</li>
+        <li>AI assistant & tự động hóa công việc</li>
+        <li>Google Sheet & tích hợp hệ thống</li>
+        <li>Viết ebook, nội dung tư duy lãnh đạo</li>
+        <li>Tư vấn triển khai công nghệ đơn giản</li>
+      </ul>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
