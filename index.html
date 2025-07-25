@@ -1,28 +1,48 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Snake Web Services</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/616/616408.png" />
+  <title>SnakeDev Landing</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="logo-section">
-      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Snake Icon" class="logo" />
-      <h1>Snake Web Services</h1>
-      <p class="slogan">🐍 Tận tâm – Tận tình – Tận tụy – Tay nghề đỉnh nóc!</p>
+  <header>
+    <div class="logo">
+      <img src="snake-icon.png" alt="Snake Logo" />
+      <h1>SnakeDev</h1>
     </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Dịch vụ</a>
+      <a href="#">Liên hệ</a>
+    </nav>
+  </header>
 
-    <form id="contact-form">
+  <section class="hero">
+    <div class="hero-content">
+      <img src="snake-planet.png" alt="Snake Character" class="hero-img"/>
+      <div class="hero-text">
+        <h2>Tận tâm – Tận tình – Tận tụy</h2>
+        <p>Tay nghề đỉnh nóc! Chuyên nhận làm website, code chuẩn, giá mềm, giao nhanh!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>Đặt hàng / Nhận tư vấn</h2>
+    <form id="jobForm">
       <input type="text" name="name" placeholder="Tên của bạn" required />
       <input type="email" name="email" placeholder="Email liên hệ" required />
-      <textarea name="message" rows="5" placeholder="Bạn cần gì? Mô tả công việc..."></textarea>
+      <textarea name="message" placeholder="Bạn cần gì? (Mô tả công việc)" required></textarea>
       <button type="submit">Gửi yêu cầu</button>
-      <p id="status"></p>
+      <p id="responseMsg"></p>
     </form>
-  </div>
+  </section>
+
+  <footer>
+    <p>© 2025 SnakeDev. All rights reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
