@@ -1,28 +1,26 @@
-const form = document.getElementById("jobForm");
-const statusDiv = document.getElementById("formStatus");
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwGBHiboge-vyTCZNUJlWMZmVkGAC69YUpT7cjfJn1ZYp9nq1aZnwtxzOgKiq8Ho5Aj/exec';
 
-// 👉 Dán link Web App từ Google Apps Script tại đây:
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/YOUR_SCRIPT_ID_HERE/exec";
+const form = document.getElementById('contact-form');
+const statusDiv = document.getElementById('status');
 
-form.addEventListener("submit", async function (e) {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
-  statusDiv.innerHTML = "⏳ Đang gửi dữ liệu...";
+  statusDiv.textContent = '⏳ Đang gửi...';
 
-  const formData = new FormData(form);
-
-  try {
-    const response = await fetch(GOOGLE_SCRIPT_URL, {
-      method: "POST",
-      body: formData,
+  fetch(scriptURL, {
+    method: 'POST',
+    body: new FormData(form)
+  })
+    .then(response => {
+      if (response.ok) {
+        statusDiv.textContent = '✅ Gửi thành công! Cảm ơn bạn.';
+        form.reset();
+      } else {
+        throw new Error('Lỗi phản hồi server.');
+      }
+    })
+    .catch(error => {
+      console.error('Error!', error.message);
+      statusDiv.textContent = '❌ Gửi thất bại. Vui lòng thử lại.';
     });
-
-    if (response.ok) {
-      statusDiv.innerHTML = "✅ Gửi thành công! Tôi sẽ phản hồi sớm nhất.";
-      form.reset();
-    } else {
-      statusDiv.innerHTML = "❌ Gửi thất bại. Vui lòng thử lại sau.";
-    }
-  } catch (error) {
-    statusDiv.innerHTML = "❌ Lỗi kết nối. Kiểm tra mạng hoặc đường dẫn script.";
-  }
 });
