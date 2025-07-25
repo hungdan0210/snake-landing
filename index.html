@@ -3,53 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Landing Page – Lê Hùng Dân</title>
+  <title>Snake Web Services</title>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/616/616408.png" />
 </head>
 <body>
-  <header>
-    <h1>🐍 Lê Hùng Dân – Tôi nhận làm những gì tôi giỏi</h1>
-  </header>
-
   <div class="container">
-    <!-- Cột trái -->
-    <div class="column">
-      <h2>Đặt yêu cầu</h2>
-      <form id="jobForm">
-        <label for="name">Tên của bạn:</label><br/>
-        <input type="text" id="name" name="name" required><br/><br/>
-
-        <label for="request">Mô tả công việc:</label><br/>
-        <textarea id="request" name="request" rows="5" required></textarea><br/><br/>
-
-        <button type="submit">Gửi yêu cầu</button>
-      </form>
-      <div id="formStatus" class="result"></div>
+    <div class="logo-section">
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Snake Icon" class="logo" />
+      <h1>Snake Web Services</h1>
+      <p class="slogan">🐍 Tận tâm – Tận tình – Tận tụy – Tay nghề đỉnh nóc!</p>
     </div>
 
-    <!-- Cột giữa -->
-    <div class="column">
-      <h2>Thông tin cá nhân</h2>
-      <p><b>Tên:</b> Lê Hùng Dân</p>
-      <p><b>Email:</b> snakenidalee@gmail.com</p>
-      <p><b>Vai trò:</b> Người xây dựng và dẫn dắt SnakeMaiCo</p>
-      <p><b>Thông điệp:</b><br/>
-        Tôi không có bằng cấp, không học vị. Tôi chỉ có kỹ năng, sự kiên trì và kết quả thực tế.<br/>
-        Nếu bạn cần một người làm được việc, tôi sẵn sàng.
-      </p>
-    </div>
-
-    <!-- Cột phải -->
-    <div class="column">
-      <h2>Dịch vụ cung cấp</h2>
-      <ul>
-        <li>Phát triển website WordPress / Shopify</li>
-        <li>AI assistant & tự động hóa công việc</li>
-        <li>Google Sheet & tích hợp hệ thống</li>
-        <li>Viết ebook, nội dung tư duy lãnh đạo</li>
-        <li>Tư vấn triển khai công nghệ đơn giản</li>
-      </ul>
-    </div>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Tên của bạn" required />
+      <input type="email" name="email" placeholder="Email liên hệ" required />
+      <textarea name="message" rows="5" placeholder="Bạn cần gì? Mô tả công việc..."></textarea>
+      <button type="submit">Gửi yêu cầu</button>
+      <p id="status"></p>
+    </form>
   </div>
 
   <script src="script.js"></script>
